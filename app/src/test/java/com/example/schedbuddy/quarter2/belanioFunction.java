@@ -5,13 +5,13 @@ public class belanioFunction {
     @Test
 
     public void printMyProfile() {
-        // 1. THE INPUT (Storing your infos)
+        // 1. THE INPUT (Storing your personal details in variables)
         String myName = "Kiel";
         String petName = "Brownie";
         String favFood = "Kare-kare";
         int myAge = 16;
 
-        // 2. THE OUTPUT (Printing your infos provided)
+        // 2. THE OUTPUT (Printing to the console)
 
         System.out.println("--MY DIGITAL PROFILE--");
         System.out.println("Hello, my name is " + myName + " and I am " + myAge + " years old ");
