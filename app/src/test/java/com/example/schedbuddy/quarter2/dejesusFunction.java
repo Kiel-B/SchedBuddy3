@@ -1,15 +1,15 @@
 package com.example.schedbuddy.quarter2;
 
 import org.junit.Test;
-public class belanioFunction {
+public class dejesusFunction {
     @Test
 
     public void printMyProfile() {
         // 1. THE INPUT (Storing your personal details in variables)
-        String myName = "Kiel";
-        String petName = "Brownie";
-        String favFood = "Kare-kare";
-        int myAge = 15;
+        String myName = "Karol";
+        String petName = "Tagpi";
+        String favFood = "Sinigang";
+        int myAge = 16;
 
         // 2. THE OUTPUT (Printing to the console)
 
