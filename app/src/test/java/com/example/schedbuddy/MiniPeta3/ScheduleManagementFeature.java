@@ -1,4 +1,4 @@
-package MiniPeta3;
+package com.example.schedbuddy.MiniPeta3;
 
 public class ScheduleManagementFeature {
 }
