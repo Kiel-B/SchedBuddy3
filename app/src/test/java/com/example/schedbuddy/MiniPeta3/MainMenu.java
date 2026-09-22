@@ -32,12 +32,15 @@ public class MainMenu {
             switch (choice) {
 
                 case 1:
-                    System.out.println("\nLogin Feature selected.");
+                    LogInFeature loginFeature = new LogInFeature();
+                    loginFeature.login();
                     break;
 
                 case 2:
-                    System.out.println("\nNotification selected.");
+                    NotificationFeature notification = new NotificationFeature();
+                    notification.notificationFeature();
                     break;
+
 
                 case 3:
                     System.out.println("\nTask Management selected.");
