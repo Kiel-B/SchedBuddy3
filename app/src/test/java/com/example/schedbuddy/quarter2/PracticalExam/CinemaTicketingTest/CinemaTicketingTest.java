@@ -13,7 +13,7 @@ public class CinemaTicketingTest {
 
 // Step 1: Test underage restriction (< 18)
             automatedInput.append("1\n"); // Choose Buy Ticket
-            automatedInput.append("15\n"); // Enter age 15 (Expected: Access Denied)
+            automatedInput.append("15\n"); // Enter age 15 (Expected: Access Denied)wada
 
 // Step 2: Test legal age access (>= 18)
             automatedInput.append("1\n"); // Choose Buy Ticket
