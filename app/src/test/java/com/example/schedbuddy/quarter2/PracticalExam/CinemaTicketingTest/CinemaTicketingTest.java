@@ -33,4 +33,3 @@ public class CinemaTicketingTest {
             cinemaSystem.start(scanner);
         }
     }
-}
