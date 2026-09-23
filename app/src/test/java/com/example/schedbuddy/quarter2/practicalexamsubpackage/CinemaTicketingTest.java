@@ -31,5 +31,4 @@ public class CinemaTicketingTest {
         Scanner scanner = new Scanner(inputStream);
         CinemaTicketingTest cinemaSystem = new CinemaTicketingTest();
         cinemaSystem.start(scanner);
-    }
 }
