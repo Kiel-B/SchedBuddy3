@@ -14,7 +14,7 @@ public class LogInFeature {
     // Login Feature
     public void login(String username, String password) {
 
-        System.out.println("\n===== SCHEDBUDDY LOGIN =====");
+        System.out.println("\n====== SCHEDBUDDY LOGIN ======");
 
         System.out.println("Username: " + username);
         System.out.println("Password: " + password);
