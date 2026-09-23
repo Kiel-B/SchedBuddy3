@@ -1,4 +1,4 @@
-package com.example.schedbuddy.MiniPeta3;
+package com.example.schedbuddy.quarter2.MiniPeta3;
 
 public class TaskManagementFeature                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {
 }
