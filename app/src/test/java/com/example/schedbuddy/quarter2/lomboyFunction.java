@@ -7,7 +7,7 @@ public class lomboyFunction {
     public void printMyProfile() {
         // 1. THE INPUT (Storing your personal details in variables)
         String myName = "Jem";
-        String petName = "Tigercommandor";
+        String petName = "Tigercommander";
         String favFood = "Sinigang";
         int myAge = 16;
 
