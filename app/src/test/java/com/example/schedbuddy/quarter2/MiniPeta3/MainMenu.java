@@ -43,7 +43,8 @@ public class MainMenu {
 
 
                 case 3:
-                    System.out.println("\nTask Management selected.");
+                    TaskManagementFeature taskManagement = new TaskManagementFeature();
+                    taskManagement.taskManagement();
                     break;
 
                 case 4:
