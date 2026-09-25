@@ -5,13 +5,25 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 import static org.junit.Assert.assertTrue;
 
 public class LogInFeature {
 
-    // Save username and password
+
+    // Login Feature
+    public void login(String username, String password) {
+
+        System.out.println("\n====== SCHEDBUDDY LOGIN ======");
+
+        System.out.println("Username: " + username);
+        System.out.println("Password: " + password);
+
+        saveAccount(username, password);
+    }
+
+
+    // Save Account
     public void saveAccount(String username, String password) {
 
         try {
@@ -30,42 +42,8 @@ public class LogInFeature {
         } catch (IOException e) {
 
             System.out.println("Error saving account.");
+
         }
-    }
-
-
-    // Login / Account Input
-    public void login() {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("===== SCHEDBUDDY LOGIN =====");
-
-        System.out.print("Enter username: ");
-        String username = scanner.nextLine();
-
-        System.out.print("Enter password: ");
-        String password = scanner.nextLine();
-
-        // Validate input
-        if (username.isEmpty() && password.isEmpty()) {
-
-            System.out.println("Username and password cannot be empty.");
-
-        } else if (username.isEmpty()) {
-
-            System.out.println("Username cannot be empty.");
-
-        } else if (password.isEmpty()) {
-
-            System.out.println("Password cannot be empty.");
-
-        } else {
-
-            saveAccount(username, password);
-        }
-
-        scanner.close();
     }
 
 
