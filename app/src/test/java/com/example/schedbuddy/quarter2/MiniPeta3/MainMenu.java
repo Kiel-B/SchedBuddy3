@@ -8,25 +8,21 @@ public class MainMenu {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Variables are declared in MainMenu
-        String username = "Kiel";
-        String password = "1234";
-
-
         int choice;
 
         do {
-
             System.out.println("\n===== SCHEDBUDDY =====");
             System.out.println("1. Login Feature");
-            System.out.println("2. Exit");
+            System.out.println("2. Notification");
+            System.out.println("3. Task Management");
+            System.out.println("4. Schedule Management");
+            System.out.println("5. Exit");
 
             System.out.print("Choose an option: ");
 
             while (!scanner.hasNextInt()) {
                 System.out.println("Invalid input. Please enter a number.");
                 scanner.next();
-
                 System.out.print("Choose an option: ");
             }
 
@@ -36,27 +32,34 @@ public class MainMenu {
             switch (choice) {
 
                 case 1:
-
                     LogInFeature loginFeature = new LogInFeature();
-
-                    // Pass the variables from MainMenu
-                    loginFeature.login(username, password);
-
+                    loginFeature.login();
                     break;
 
                 case 2:
+                    NotificationFeature notification = new NotificationFeature();
+                    notification.notificationFeature();
+                    break;
 
+
+                case 3:
+                    TaskManagementFeature taskManagement = new TaskManagementFeature();
+                    taskManagement.taskManagement();
+                    break;
+
+                case 4:
+                    System.out.println("\nSchedule Management selected.");
+                    break;
+
+                case 5:
                     System.out.println("\nExiting SchedBuddy...");
-
                     break;
 
                 default:
-
-                    System.out.println("\nInvalid option.");
-
+                    System.out.println("\nInvalid option. Please choose 1-5.");
             }
 
-        } while (choice != 2);
+        } while (choice != 5);
 
         scanner.close();
     }
