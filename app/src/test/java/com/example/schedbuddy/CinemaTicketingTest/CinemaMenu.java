@@ -5,14 +5,32 @@ import java.util.Scanner;
 public class CinemaMenu {
 
     public void start(Scanner scanner) {
-        // Code will be added in later commits
+
+        int choice = 0;
+
+        while (choice != 3) {
+
+            System.out.println("\n===== CINEMA TICKETING SYSTEM =====");
+            System.out.println("1. Buy Ticket");
+            System.out.println("2. Buy Snacks");
+            System.out.println("3. Exit");
+            System.out.print("Enter choice: ");
+
+            choice = scanner.nextInt();
+
+            System.out.println("You selected: " + choice);
+        }
+
+        System.out.println("Thank you for using the Cinema Ticketing System!");
     }
 
+}
+
     public void buyTicket(Scanner scanner) {
-        // Code will be added later
+        // Will be implemented later
     }
 
     public void buySnacks() {
-        // Code will be added later
+        // Will be implemented later
     }
 }
