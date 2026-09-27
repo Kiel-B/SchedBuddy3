@@ -49,7 +49,7 @@ public class MainMenu {
 
                 case 4:
                     ScheduleManagementFeature scheduleManagement = new ScheduleManagementFeature();
-                    scheduleManagement.scheduleManagement():
+                    scheduleManagement.scheduleManagement();
                     break;
 
                 case 5:

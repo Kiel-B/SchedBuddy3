@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 import static org.junit.Assert.assertTrue;
 
@@ -12,12 +13,17 @@ public class LogInFeature {
 
 
     // Login Feature
-    public void login(String username, String password) {
+    public void login() {
+
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("\n====== SCHEDBUDDY LOGIN ======");
 
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
+        System.out.print("Enter Username: ");
+        String username = scanner.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = scanner.nextLine();
 
         saveAccount(username, password);
     }
