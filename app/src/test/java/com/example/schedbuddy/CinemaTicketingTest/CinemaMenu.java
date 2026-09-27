@@ -44,11 +44,35 @@ public class CinemaMenu {
 
         int age = scanner.nextInt();
 
-        System.out.println("Age entered: " + age);
+        if (age < 18) {
+
+            System.out.println("Access Denied.");
+            System.out.println("You must be 18 or older to purchase a ticket.");
+
+        } else {
+
+            double ticketPrice = 250.00;
+            double tax = ticketPrice * 0.12;
+            double total = ticketPrice + tax;
+
+            System.out.println("\n===== TICKET =====");
+            System.out.println("Age: " + age);
+            System.out.println("Ticket Price: ₱" + ticketPrice);
+            System.out.println("Tax: ₱" + tax);
+            System.out.println("Total: ₱" + total);
+            System.out.println("Ticket Printed Successfully!");
+        }
     }
 
     public void buySnacks() {
-        System.out.println("\n===== BUY SNACKS =====");
-        System.out.println("Snack menu will be added later.");
+        double snackPrice = 150.00;
+        double tax = snackPrice * 0.12;
+        double total = snackPrice + tax;
+
+        System.out.println("\n===== SNACK PURCHASE =====");
+        System.out.println("Snack Price: ₱" + snackPrice);
+        System.out.println("Tax: ₱" + tax);
+        System.out.println("Total: ₱" + total);
+        System.out.println("Snack Purchase Successful!");
     }
 }
