@@ -1,7 +1,11 @@
 package com.example.schedbuddy.quarter2.MiniPeta3;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import static org.junit.Assert.assertTrue;
 
 public class ScheduleManagementFeature {
 
@@ -132,5 +136,18 @@ public class ScheduleManagementFeature {
 
         } while (choice != 5);
     }
-}
 
+
+    // JUnit Test
+    @Test
+    public void testScheduleManagement() {
+
+        String schedule = "Java Programming Activity";
+
+        schedules.add(schedule);
+
+        assertTrue(
+                schedules.contains(schedule)
+        );
+    }
+}
