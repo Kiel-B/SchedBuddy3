@@ -48,7 +48,8 @@ public class MainMenu {
                     break;
 
                 case 4:
-                    System.out.println("\nSchedule Management selected.");
+                    ScheduleManagementFeature scheduleManagement = new ScheduleManagementFeature();
+                    scheduleManagement.scheduleManagement():
                     break;
 
                 case 5:
