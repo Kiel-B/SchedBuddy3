@@ -6,9 +6,9 @@ public class CinemaMenu {
 
     public void start(Scanner scanner) {
 
-        int choice = 0;
+        int choice;
 
-        while (choice != 3) {
+        while (true) {
 
             System.out.println("\n===== CINEMA TICKETING SYSTEM =====");
             System.out.println("1. Buy Ticket");
@@ -18,19 +18,37 @@ public class CinemaMenu {
 
             choice = scanner.nextInt();
 
-            System.out.println("You selected: " + choice);
-        }
+            switch (choice) {
 
-        System.out.println("Thank you for using the Cinema Ticketing System!");
+                case 1:
+                    buyTicket(scanner);
+                    break;
+
+                case 2:
+                    buySnacks();
+                    break;
+
+                case 3:
+                    System.out.println("Thank you for using the Cinema Ticketing System!");
+                    return;
+
+                default:
+                    System.out.println("Invalid choice.");
+            }
+        }
     }
 
-}
-
     public void buyTicket(Scanner scanner) {
-        // Will be implemented later
+        System.out.println("\n===== BUY TICKET =====");
+        System.out.print("Enter your age: ");
+
+        int age = scanner.nextInt();
+
+        System.out.println("Age entered: " + age);
     }
 
     public void buySnacks() {
-        // Will be implemented later
+        System.out.println("\n===== BUY SNACKS =====");
+        System.out.println("Snack menu will be added later.");
     }
 }
