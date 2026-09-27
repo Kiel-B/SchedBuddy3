@@ -1,4 +1,4 @@
-package com.example.schedbuddy.quarter2.PracticalExam.ArcadeCounterTest;
+package com.example.schedbuddy.quarter2.PracticalExam;
 
 import org.junit.Test;
 import java.util.Scanner;
@@ -14,4 +14,4 @@ public class ArcadeCounterTest {
     public void start(Scanner scanner) {
         // Program logic will be added in later commits
     }
-1
+}
