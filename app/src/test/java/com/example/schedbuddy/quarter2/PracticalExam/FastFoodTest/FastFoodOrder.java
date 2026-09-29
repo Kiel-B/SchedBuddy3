@@ -31,6 +31,6 @@ public class FastFoodOrder {
         System.out.printf("Item Price: ₱%.2f%n", basePrice);
         System.out.printf("Tax (12%%): ₱%.2f%n", calculateTax());
         System.out.printf("Total due: ₱%.2f%n", calculateTotal());
-        System.out.println("success: Successfully processed your order for " + itemName + "!");
+        System.out.println("Success: Successfully processed your order for " + itemName + "!");
     }
 }
