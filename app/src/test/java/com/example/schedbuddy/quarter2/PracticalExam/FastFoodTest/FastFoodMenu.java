@@ -28,7 +28,7 @@ public class FastFoodMenu {
                     break;
 
                 case 3:
-                    System.out.println("\nThank you for using the Fast Food System!");
+                    System.out.println("\nyhank you for using the Fast Food System!");
                     break;
 
                 default:
