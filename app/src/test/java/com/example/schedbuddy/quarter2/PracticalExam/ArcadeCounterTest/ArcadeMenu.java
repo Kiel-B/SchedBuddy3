@@ -1,8 +1,6 @@
-
 package com.example.schedbuddy.quarter2.PracticalExam.ArcadeCounterTest;
 
-import java.
-        util.Scanner;
+import java.util.Scanner;
 
 public class ArcadeMenu {
 
@@ -23,18 +21,32 @@ public class ArcadeMenu {
 
             // Route the choice to the correct option
             if (choice == 1) {
-                System.out.println("Buy Tokens Selected");
+
+                // Buy Tokens option
+                System.out.println("Tokens purchased!");
 
             } else if (choice == 2) {
-                System.out.println("Claim Prize Selected");
+
+                // Ask for the number of tickets
+                System.out.print("Enter number of tickets: ");
+                int tickets = scanner.nextInt();
+
+                // Check if the player has enough tickets for a prize
+                if (tickets >= 500) {
+                    System.out.println("Teddy Bear Won!");
+                } else {
+                    System.out.println("Keep Playing!");
+                }
 
             } else if (choice == 3) {
+
                 System.out.println("Exit Selected");
 
                 // Stop the menu loop
                 running = false;
 
             } else {
+
                 // Handle an invalid menu choice
                 System.out.println("Invalid Choice");
             }
