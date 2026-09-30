@@ -6,32 +6,32 @@ public class ArcadeMenu {
 
     public void start(Scanner scanner) {
 
-        // Keeps the menu running until the user chooses Exit
+        // Keeps the arcade menu running
         boolean running = true;
 
         while (running) {
 
-            // Display the arcade menu
+            // Display the available arcade options
+            System.out.println("\n=== ARCADE MENU ===");
             System.out.println("1. Buy Tokens");
             System.out.println("2. Claim Prize");
             System.out.println("3. Exit");
 
-            // Get the user's menu choice
+            // Read the user's menu choice
             int choice = scanner.nextInt();
 
-            // Route the choice to the correct option
+            // Process the selected option
             if (choice == 1) {
 
-                // Buy Tokens option
-                System.out.println("Tokens purchased!");
+                System.out.println("Tokens purchased successfully!");
 
             } else if (choice == 2) {
 
-                // Ask for the number of tickets
+                // Get the player's ticket count
                 System.out.print("Enter number of tickets: ");
                 int tickets = scanner.nextInt();
 
-                // Check if the player has enough tickets for a prize
+                // Check if the player can claim the prize
                 if (tickets >= 500) {
                     System.out.println("Teddy Bear Won!");
                 } else {
@@ -40,15 +40,14 @@ public class ArcadeMenu {
 
             } else if (choice == 3) {
 
-                System.out.println("Exit Selected");
-
-                // Stop the menu loop
+                // End the arcade program
+                System.out.println("Thank you for playing!");
                 running = false;
 
             } else {
 
-                // Handle an invalid menu choice
-                System.out.println("Invalid Choice");
+                // Handle choices outside the menu
+                System.out.println("Invalid choice. Please try again.");
             }
         }
     }
