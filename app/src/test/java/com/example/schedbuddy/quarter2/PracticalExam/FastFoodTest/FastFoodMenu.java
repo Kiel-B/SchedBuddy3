@@ -1,4 +1,5 @@
 package com.example.schedbuddy.quarter2.PracticalExam.FastFoodTest;
+
 import java.util.Scanner;
 
 public class FastFoodMenu {
@@ -38,10 +39,49 @@ public class FastFoodMenu {
     }
 
     public void orderBurger(Scanner scanner) {
-        // Next commit will fill this out...
+        System.out.println("\n===== BURGER OPTIONS =====");
+        System.out.println("1. Combo (with Drink & Fries)");
+        System.out.println("2. Solo");
+        System.out.print("Enter burger option: ");
+
+        int burgerOption = scanner.nextInt();
+
+        if (burgerOption == 1) {
+            double comboPrice = 180.00;
+            double tax = comboPrice * 0.12;
+            double total = comboPrice + tax;
+
+            System.out.println("\n===== ORDER SUMMARY (COMBO) =====");
+            System.out.printf("Item Price: ₱%.2f%n", comboPrice);
+            System.out.printf("Tax: ₱%.2f%n", tax);
+            System.out.printf("Total: ₱%.2f%n", total);
+            System.out.println("Success: Ordered Burger as COMBO!");
+
+        } else if (burgerOption == 2) {
+            double soloPrice = 120.00;
+            double tax = soloPrice * 0.12;
+            double total = soloPrice + tax;
+
+            System.out.println("\n===== ORDER SUMMARY (SOLO) =====");
+            System.out.printf("Item Price: ₱%.2f%n", soloPrice);
+            System.out.printf("Tax: ₱%.2f%n", tax);
+            System.out.printf("Total: ₱%.2f%n", total);
+            System.out.println("Success: Ordered Burger as SOLO!");
+
+        } else {
+            System.out.println("\nInvalid burger option. Please try again.");
+        }
     }
 
     public void orderFries() {
-        // Next commit will fill this out...
+        double friesPrice = 65.00;
+        double tax = friesPrice * 0.12;
+        double total = friesPrice + tax;
+
+        System.out.println("\n===== ORDER SUMMARY (FRIES) =====");
+        System.out.printf("Item Price: ₱%.2f%n", friesPrice);
+        System.out.printf("Tax: ₱%.2f%n", tax);
+        System.out.printf("Total: ₱%.2f%n", total);
+        System.out.println("Success: Ordered FRIES!");
     }
 }
