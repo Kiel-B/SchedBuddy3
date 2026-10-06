@@ -24,7 +24,7 @@ public class FastFoodMenu {
                     break;
 
                 case 2:
-                   System.out.println("orderburger");
+                    orderFries();
                     break;
 
                 case 3:
@@ -73,4 +73,15 @@ public class FastFoodMenu {
         }
     }
 
+    public void orderFries() {
+        double friesPrice = 65.00;
+        double tax = friesPrice * 0.12;
+        double total = friesPrice + tax;
+
+        System.out.println("\n===== ORDER SUMMARY (FRIES) =====");
+        System.out.printf("Item Price: ₱%.2f%n", friesPrice);
+        System.out.printf("Tax: ₱%.2f%n", tax);
+        System.out.printf("Total: ₱%.2f%n", total);
+        System.out.println("Success: Ordered FRIES!");
+    }
 }
