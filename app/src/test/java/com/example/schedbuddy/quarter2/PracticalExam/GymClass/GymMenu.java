@@ -14,7 +14,7 @@ public class GymMenu {
 
         while (running && scanner.hasNextLine()){
 
-        }
+
 
     }
 }
