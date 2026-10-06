@@ -6,7 +6,7 @@ public class GymMenu {
     public void start(Scanner scanner) {
 
         boolean running = true;
-
+        //PRINT OPTIONS FOR ENTERING THE GYM
         System.out.println("========== GYM =============");
         System.out.println("WOULD YOU LIKE TO ENTER?");
         System.out.println("1. YES");
@@ -16,7 +16,7 @@ public class GymMenu {
             String input = scanner.nextLine().trim();
 
             switch(input){
-                case"1":
+                case"1"://NOTIFY THAT THE USER HAS ENTERED THE GYM
                     System.out.println("User has entered the gym.....\n");
                     break;
                 case"2":
@@ -27,7 +27,7 @@ public class GymMenu {
                     if (scanner.hasNextLine()){
                         String tierInput = scanner.nextLine().trim();
 
-                        if(tierInput.equals("1")){
+                        if(tierInput.equals("1")){ //FOR REGULAR MEMBERSHIP THAT WANTS TO HIRE A TRAINER
                             System.out.println("User Profile");
                             System.out.println("NAME: ########");
                             System.out.println("EMAIL: ############");
@@ -38,7 +38,7 @@ public class GymMenu {
                             System.out.println("       3.EXIT");
                             System.out.println("==========================\n");
 
-                        }else if(tierInput.equals("2")){
+                        }else if(tierInput.equals("2")){ // FOR VIP MEMBERSHIP THAT WANTS TO HIRE A TRAINER
                             System.out.println("User Profile");
                             System.out.println("NAME: ########");
                             System.out.println("EMAIL: ############");
@@ -51,7 +51,7 @@ public class GymMenu {
                     }
                     break;
 
-                case "3":
+                case "3": //FOR EXIT PRINT
                     System.out.println("USER HAS SUCCESFULLY EXITED THE APP\n");
                     running = false;
                     break;
