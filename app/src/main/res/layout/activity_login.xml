@@ -15,13 +15,22 @@
         app:cardBackgroundColor="#FFE8C4"
         app:cardCornerRadius="30dp"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="26dp" >
+        tools:layout_editor_absoluteY="26dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="240dp"
             app:cardBackgroundColor="#FF8A1C"
-            app:cardCornerRadius="30dp" />
+            app:cardCornerRadius="30dp" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="351dp"
+                android:layout_height="171dp"
+                app:srcCompat="@mipmap/bee_logo_foreground" />
+
+        </androidx.cardview.widget.CardView>
+
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
