@@ -1,0 +1,219 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFD94A"
+    android:padding="20dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#FFE8C2"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_horizontal">
+
+                <!-- ORANGE HEADER: LOGO, TITLE, TAGLINE -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="227dp"
+                    app:cardBackgroundColor="#FF9810"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="145dp"
+                            android:layout_height="125dp"
+                            android:contentDescription="Bee logo"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@mipmap/bee_logo_foreground"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sched Buddy"
+                            android:textColor="#563000"
+                            android:textSize="32sp"
+                            android:textStyle="bold"
+                            app:layout_constraintTop_toBottomOf="@id/imageView2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Plan your day, one buzz at a time!"
+                            android:textColor="#593B12"
+                            android:textSize="12sp"
+                            app:layout_constraintTop_toBottomOf="@id/textView"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- LOGIN SECTION -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="Welcome Back!"
+                    android:textColor="#563000"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Log in to manage your schedule."
+                    android:textColor="#805B35"
+                    android:textSize="14sp" />
+
+                <!-- STUDENT ID LABEL -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Student ID"
+                    android:textColor="#563000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- STUDENT ID INPUT -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    app:boxBackgroundColor="#FFF8E9"
+                    app:boxBackgroundMode="filled"
+                    app:boxCornerRadiusTopStart="14dp"
+                    app:boxCornerRadiusTopEnd="14dp"
+                    app:boxCornerRadiusBottomStart="14dp"
+                    app:boxCornerRadiusBottomEnd="14dp"
+                    app:boxStrokeColor="#FF9810"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etStudentId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Student ID"
+                        android:inputType="text"
+                        android:padding="15dp"
+                        android:textColor="#563000"
+                        android:textColorHint="#A68A66"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- PASSWORD LABEL -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Password"
+                    android:textColor="#563000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- PASSWORD INPUT -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="22dp"
+                    app:boxBackgroundColor="#FFF8E9"
+                    app:boxBackgroundMode="filled"
+                    app:boxCornerRadiusTopStart="14dp"
+                    app:boxCornerRadiusTopEnd="14dp"
+                    app:boxCornerRadiusBottomStart="14dp"
+                    app:boxCornerRadiusBottomEnd="14dp"
+                    app:boxStrokeColor="#FF9810"
+                    app:passwordToggleEnabled="true"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:padding="15dp"
+                        android:textColor="#563000"
+                        android:textColorHint="#A68A66"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- LOG IN BUTTON -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Log in"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FF9810"
+                    app:cornerRadius="15dp"
+                    app:elevation="0dp" />
+
+                <!-- CREATE ACCOUNT BUTTON -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCreateAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textColor="#563000"
+                    android:textSize="16sp"
+                    app:backgroundTint="#FFF0C4"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#FF9810"
+                    app:strokeWidth="1dp"
+                    app:elevation="0dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
