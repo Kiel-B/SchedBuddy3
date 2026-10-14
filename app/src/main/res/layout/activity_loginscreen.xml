@@ -205,7 +205,7 @@
                     android:textColor="#563000"
                     android:textSize="16sp"
                     app:backgroundTint="#FFF0C4"
-                    app:cornerRadius="15dp"
+                    app:cornerRadius="16dp"
                     app:strokeColor="#FF9810"
                     app:strokeWidth="1dp"
                     app:elevation="0dp" />
