@@ -24,4 +24,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "SchedBuddy"
 include ':app'
-include ':app:java'
