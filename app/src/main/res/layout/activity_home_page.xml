@@ -2,9 +2,553 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePageActivity">
+    android:background="#FF9810"
+    android:backgroundTint="#FDD548">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView13"
+        android:layout_width="336dp"
+        android:layout_height="669dp"
+        app:cardBackgroundColor="#FBEAA3"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.595">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="655dp">
+
+            <!-- ===== Orange header ===== -->
+
+            <!-- ===== Today task label ===== -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="388dp"
+                android:layout_height="211dp"
+                app:cardBackgroundColor="#FF9810"
+                app:cardCornerRadius="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="195dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:contentDescription="Bee logo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/bee_logo_foreground" />
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="BZZY MORNING"
+                        android:textColor="#3E2200"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kiel"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtTodayTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Today task"
+                android:textColor="#3E2200"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView2" />
+
+            <!-- ===== Task 1 ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTask1"
+                android:layout_width="148dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#FFF3C4"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtTodayTask"
+                app:strokeColor="#FDD548"
+                app:strokeWidth="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvTask1Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Task 1"
+                        android:textColor="#3E2200"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgClock1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTask1Title"
+                        app:srcCompat="@drawable/ic_clock"
+                        app:tint="#FF9810" />
+
+                    <TextView
+                        android:id="@+id/tvTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Time"
+                        android:textColor="#7A5A2E"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgClock1"
+                        app:layout_constraintStart_toEndOf="@id/imgClock1"
+                        app:layout_constraintTop_toTopOf="@id/imgClock1" />
+
+                    <ImageView
+                        android:id="@+id/imgDesc1"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgClock1"
+                        app:srcCompat="@drawable/ic_description"
+                        app:tint="#FF9810" />
+
+                    <TextView
+                        android:id="@+id/tvDesc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Description"
+                        android:textColor="#7A5A2E"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgDesc1"
+                        app:layout_constraintStart_toEndOf="@id/imgDesc1"
+                        app:layout_constraintTop_toTopOf="@id/imgDesc1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ===== Task 2 ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTask2"
+                android:layout_width="148dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                app:cardBackgroundColor="#FFF3C4"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:layout_constraintStart_toEndOf="@id/cardTask1"
+                app:layout_constraintTop_toTopOf="@id/cardTask1"
+                app:strokeColor="#FDD548"
+                app:strokeWidth="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvTask2Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Task 2"
+                        android:textColor="#3E2200"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgClock2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvTask2Title"
+                        app:srcCompat="@drawable/ic_clock"
+                        app:tint="#FF9810" />
+
+                    <TextView
+                        android:id="@+id/tvTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Time"
+                        android:textColor="#7A5A2E"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgClock2"
+                        app:layout_constraintStart_toEndOf="@id/imgClock2"
+                        app:layout_constraintTop_toTopOf="@id/imgClock2" />
+
+                    <ImageView
+                        android:id="@+id/imgDesc2"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgClock2"
+                        app:srcCompat="@drawable/ic_description"
+                        app:tint="#FF9810" />
+
+                    <TextView
+                        android:id="@+id/tvDesc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Description"
+                        android:textColor="#7A5A2E"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgDesc2"
+                        app:layout_constraintStart_toEndOf="@id/imgDesc2"
+                        app:layout_constraintTop_toTopOf="@id/imgDesc2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ===== Progress bar ===== -->
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressDay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="16dp"
+                android:progress="15"
+                app:indicatorColor="#F5C518"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardTask1"
+                app:trackColor="#FDD548"
+                app:trackCornerRadius="4dp"
+                app:trackThickness="8dp" />
+
+            <!-- ===== Today / Week / Month ===== -->
+            <LinearLayout
+                android:id="@+id/rowFilter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progressDay">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnToday"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="Today"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FF9810"
+                    app:cornerRadius="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWeek"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="Week"
+                    android:textAllCaps="false"
+                    android:textColor="#3E2200"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FDE59A"
+                    app:cornerRadius="20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="Month"
+                    android:textAllCaps="false"
+                    android:textColor="#3E2200"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FDE59A"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+
+            <!-- ===== Brown task row ===== -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardTaskRow"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="#C8671F"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rowFilter"
+                app:strokeColor="#FDD548"
+                app:strokeWidth="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/tvRowTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Task 1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgRowClock"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="6dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvRowTitle"
+                        app:srcCompat="@drawable/ic_clock"
+                        app:tint="#FFD27A" />
+
+                    <TextView
+                        android:id="@+id/tvRowTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Time"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgRowClock"
+                        app:layout_constraintStart_toEndOf="@id/imgRowClock"
+                        app:layout_constraintTop_toTopOf="@id/imgRowClock" />
+
+                    <ImageView
+                        android:id="@+id/imgRowDesc"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="4dp"
+                        android:contentDescription="@null"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgRowClock"
+                        app:srcCompat="@drawable/ic_description"
+                        app:tint="#FFD27A" />
+
+                    <TextView
+                        android:id="@+id/tvRowDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="Description"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        app:layout_constraintBottom_toBottomOf="@id/imgRowDesc"
+                        app:layout_constraintStart_toEndOf="@id/imgRowDesc"
+                        app:layout_constraintTop_toTopOf="@id/imgRowDesc" />
+
+                    <ImageView
+                        android:id="@+id/imgRowChevron"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:contentDescription="Open task"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_chevron"
+                        app:tint="#FFFFFF" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ===== Decorative circles (unchanged) ===== -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="318dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="557dp"
+        android:layout_marginEnd="202dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/brown_circle_home_page_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="318dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginBottom="540dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/brown_circle_home_page_foreground" />
+
+    <!-- ===== Bottom navigation bar ===== -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardNav"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#FBF0D8"
+        app:cardCornerRadius="36dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Home (active, with underline) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnNavHome"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:contentDescription="Home"
+                    app:tint="#FF9810"
+                    app:srcCompat="@drawable/ic_nav_home" />
+
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="3dp"
+                    android:background="#FF9810" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnNavClock"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="History"
+                app:tint="#5A3A1E"
+                app:srcCompat="@drawable/ic_clock" />
+
+            <!-- Gap for the floating + button -->
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnNavCalendar"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="Calendar"
+                app:tint="#5A3A1E"
+                app:srcCompat="@drawable/ic_nav_calendar" />
+
+            <ImageButton
+                android:id="@+id/btnNavBell"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="Notifications"
+                app:tint="#5A3A1E"
+                app:srcCompat="@drawable/ic_nav_bell" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- ===== Floating + button, poking above the bar ===== -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Add task"
+        android:translationY="-32dp"
+        app:backgroundTint="#FF9810"
+        app:elevation="8dp"
+        app:fabCustomSize="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardNav"
+        app:maxImageSize="32dp"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="#FFFFFF" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
