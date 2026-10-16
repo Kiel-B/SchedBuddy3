@@ -13,6 +13,6 @@
         android:layout_width="455dp"
         android:layout_height="764dp"
         android:src="@mipmap/bee_logo_foreground"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-3dp" />
+        tools:layout_editor_absoluteX="-22dp"
+        tools:layout_editor_absoluteY="-4dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
