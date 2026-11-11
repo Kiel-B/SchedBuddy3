@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SchedBuddy</string>
+    <string name="splash_logo_description">SchedBuddy logo</string>
 </resources>
