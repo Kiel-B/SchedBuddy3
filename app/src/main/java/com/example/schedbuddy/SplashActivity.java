@@ -8,17 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static final int SPLASH_DELAY = 2000; // 2 seconds
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main); // your splash layout
+        setContentView(R.layout.activity_main); // splash layout
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish(); // so Back doesn't return to the splash
-        }, SPLASH_DELAY);
+            startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+            finish();
+        }, 2000);
     }
 }
