@@ -13,9 +13,10 @@
         android:layout_width="455dp"
         android:layout_height="764dp"
         android:src="@mipmap/bee_logo_foreground"
+        android:contentDescription="@string/splash_logo_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.151" />
 </androidx.constraintlayout.widget.ConstraintLayout>
