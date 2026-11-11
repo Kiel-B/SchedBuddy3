@@ -1,10 +1,10 @@
 package com.example.schedbuddy;
 
-import android.os.Bundle;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,13 +17,10 @@ public class LoginActivity extends AppCompatActivity {
         Button btnLogin = findViewById(R.id.btnLogin);
         Button btnCreateAccount = findViewById(R.id.btnCreateAccount);
 
-        btnLogin.setOnClickListener(v -> {
-            startActivity(new Intent(LoginActivity.this, HomePageActivity.class));
-            finish();
-        });
+        btnLogin.setOnClickListener(v ->
+                startActivity(new Intent(LoginActivity.this, LoginFormActivity.class)));
 
-        btnCreateAccount.setOnClickListener(v -> {
-            startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
-        });
+        btnCreateAccount.setOnClickListener(v ->
+                startActivity(new Intent(LoginActivity.this, RegistrationActivity.class)));
     }
 }
