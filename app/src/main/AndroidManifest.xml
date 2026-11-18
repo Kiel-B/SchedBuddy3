@@ -29,8 +29,7 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".HomePageActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:exported="false" />
 
         <activity
             android:name=".LoginFormActivity"
