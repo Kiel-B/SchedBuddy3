@@ -31,4 +31,8 @@ public class LoginFormActivity extends AppCompatActivity {
             startActivity(new Intent(LoginFormActivity.this, HomePageActivity.class));
             finishAffinity();
         });
-    }}
+
+        btnCreateAccount.setOnClickListener(v ->
+                startActivity(new Intent(LoginFormActivity.this, RegistrationActivity.class)));
+    }
+}
